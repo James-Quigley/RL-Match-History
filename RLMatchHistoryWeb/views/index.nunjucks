@@ -1,0 +1,11 @@
+{% extends "parent.nunjucks" %}
+
+{%block header%}
+    <h1>{{title}}</h1>
+    <h3>{{user.name}}<h3>
+    {% if user %}
+            <h2>Welcome!</h2>
+    {%else%}
+            <h2>Please login!</h2>
+    {%endif%}
+{%endblock%}

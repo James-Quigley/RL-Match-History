@@ -1,0 +1,4 @@
+{% block title %} {{error.status}} {% endblock %}
+{% block content %}
+<p>{{message}}</p>
+{% endblock %}
