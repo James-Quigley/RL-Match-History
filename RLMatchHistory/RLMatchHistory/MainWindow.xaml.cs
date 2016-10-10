@@ -43,7 +43,7 @@ namespace RLMatchHistory
 
         private void OnChanged(object source, FileSystemEventArgs e)
         {
-            JObject json; //= parseReplay(source.???);
+            //JObject json = parseReplay(source.???);
         }
 
         private JObject parseReplay(string path)
