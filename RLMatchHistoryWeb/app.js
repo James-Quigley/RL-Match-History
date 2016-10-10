@@ -88,7 +88,7 @@ app.get('/auth/steam',
   });
 
 app.get('/auth/steam/return',
-  passport.authenticate('steam', { failureRedirect: '/' }),
+  passport.authenticate('steam', { failureRedirect: '/auth/fail' }),
   function(req, res) {
     // Successful authentication, redirect home.
     res.redirect('/');

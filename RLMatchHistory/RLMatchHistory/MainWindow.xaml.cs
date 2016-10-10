@@ -4,6 +4,8 @@ using System.Windows;
 using RocketLeagueReplayParser;
 using System.Collections.Generic;
 using Newtonsoft.Json.Linq;
+using System.Net.Http;
+using System.Net.Http.Headers;
 
 namespace RLMatchHistory
 {
@@ -56,6 +58,17 @@ namespace RLMatchHistory
             jsonString = jsonString + "}";
             JObject json = JObject.Parse(jsonString);
             return json;
+        }
+
+        private void addToDataBase(JObject game)
+        {
+
+        }
+
+        private bool isInDataBase(JObject game)
+        {
+            
+            return true;
         }
 
     }
