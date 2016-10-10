@@ -80,7 +80,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
-<<<<<<< HEAD
+app.use('/users', users);
+app.use('/api', api);
 
 app.get('/auth/steam',
   passport.authenticate('steam'),
@@ -95,10 +96,7 @@ app.get('/auth/steam/return',
     // Successful authentication, redirect home.
     res.redirect('/');
   });
-=======
-app.use('/users', users);
-app.use('/api', api);
->>>>>>> master
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
